@@ -22,4 +22,4 @@ jobs:
 
       - name: Deploy frontend to S3
         run: |
-          aws s3 sync frontend/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
+          aws s3 sync awss3/ s3://${{ secrets.S3_BUCKET_NAME }} --delete
